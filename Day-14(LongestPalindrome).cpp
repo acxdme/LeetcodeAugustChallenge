@@ -1,4 +1,20 @@
 /*
+Question : Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+This is case sensitive, for example "Aa" is not considered a palindrome here.
+
+Note:
+Assume the length of given string will not exceed 1,010.
+
+Example:
+Input: "abccccdd"
+Output: 7
+
+Explanation:
+One longest palindrome that can be built is "dccaccd", whose length is 7.
+
+*/
+
+/*
 Time complexity : O(n)
 Space complexity : O(1)
 My approach : use hash small and large for a-z and A-Z separately storing their counts , now in each hash, count the number of even pair of alphabets and keep a track if single 

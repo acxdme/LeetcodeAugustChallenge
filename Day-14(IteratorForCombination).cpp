@@ -1,4 +1,4 @@
-*/
+/*
  Good Question:
 Design an Iterator class, which has:
 

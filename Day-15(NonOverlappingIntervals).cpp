@@ -1,5 +1,5 @@
 /*
-Time complexity : O(N)
+Time complexity : O(Nlogn)
 Space complexity :O(1)
 Algo : Sort the intervals according to the starting point 
        initialize the pair with the first interval,

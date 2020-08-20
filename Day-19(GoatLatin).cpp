@@ -57,3 +57,29 @@ public:
         return answer;
     }
 };
+
+//Method-2 Using StringStream
+/*
+ time :O(n+k^2) , n is number of characters and k is number of a's appended to each word
+ Space: O(1)
+ resource: https://www.tutorialspoint.com/stringstream-in-cplusplus
+*/
+class Solution {
+public:
+    string toGoatLatin(string S) {
+        stringstream ss(S);
+        string result, word, suffix;
+        unordered_set<char> vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        
+        while(ss >> word){
+            suffix += 'a';
+            if(vowels.find(word[0]) == vowels.end())
+                word = word.substr(1) + word[0];
+            result += word + "ma" + suffix + ' ';
+         }
+        result.pop_back();
+        return result;
+    }
+};
+
+

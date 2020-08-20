@@ -1,5 +1,5 @@
 /*
-Time complexity : O(candies)
+Time complexity : O(sqrt(candies))    
 Space complexity: O(N)  , which is the size of the vector.
 My approach : Simply implemented what was described by the given question.
 */
@@ -29,3 +29,25 @@ public:
         return answer;
     }
 };
+
+/*
+precise code:
+
+class Solution {
+public:
+    string toGoatLatin(string S) {
+        stringstream ss(S);
+        string result, word, suffix;
+        unordered_set<char> vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        
+        while(ss >> word){
+            suffix += 'a';
+            if(vowels.find(word[0]) == vowels.end())
+                word = word.substr(1) + word[0];
+            result += word + "ma" + suffix + ' ';
+         }
+        result.pop_back();
+        return result;
+    }
+};
+*/

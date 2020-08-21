@@ -2,6 +2,7 @@
 Method-1 (Using two pass)
 Time complexity : O(n)
 Space complexity :O(n)
+My approach : Iterating twice to form the answer vector , in first pass get the even parity elements and in 2nd pass get the odd parity elements.
 */
 
 class Solution {

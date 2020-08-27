@@ -43,6 +43,8 @@ public:
 
 /*
 space optimized dfs approach to calculate the left leaves sum in a tree.
+Time : O(N)
+Space :O(1)
 */
 
 class Solution {
